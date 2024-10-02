@@ -23,15 +23,31 @@ async function main(){
     await mongoose.connect(mongo_url);
 };
 
+// index route
 app.get("/listing", async(req,res)=>{
    const alllistings = await listing.find({});
    res.render("index.ejs",{alllistings});
 });
+
+//  new route
+app.get("/listing/new",(req,res)=>{
+    res.render("new.ejs");
+});
+//  create route
+app.post("/listing/new", async(req,res)=>{
+   const newlisting = new listing(req.body.listing);
+   await newlisting.save();
+   res.redirect("/listing")
+});
+
+// show route
 app.get("/listing/:id", async(req,res)=>{
     let {id} = req.params;
     const thislisting = await listing.findById(id);  
     res.render("show.ejs",{thislisting});
  });
+
+
 
 // app.get("/database",(req,res)=>{
 //     const samplelisting = new listing({

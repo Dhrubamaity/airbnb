@@ -1,26 +1,50 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     width: 100vw;
     height: 100vh;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
-h2{
-    margin-left: 140px;
-    color: white;
-    font-size: 34px;
-    padding: 20px;
+
+.header {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+    padding: 15px;
 }
-h3{
+
+button {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: rgb(22, 22, 22);
+    border: 2px solid rgb(245, 31, 31)te;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+}
+
+h3 {
     color: white;
     padding: 20px 20px;
     font-size: 26px;
 }
-.div{
+
+.div {
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
@@ -28,25 +52,28 @@ h3{
     text-align: center;
     align-items: center;
 }
-.container{
-    background-color: rgb(23, 23, 23);
+
+.container {
+    background-color: rgba(13, 13, 13, 0.952);
     width: 27vw;
     height: 55vh;
     display: flex;
     flex-wrap: wrap;
     /* padding: 20px; */
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 7px;
     transition: transform 0.2s ease-in-out;
 }
-.container:hover{
+
+.container:hover {
     transform: scale(1.015);
 }
-p{ 
+
+p {
     position: relative;
     background-color: rgba(182, 170, 228, 0);
     backdrop-filter: blur(20px);
-    height:100px;
+    height: 100px;
     width: 70%;
     bottom: 70px;
     /* border: 1px solid black; */
@@ -57,6 +84,7 @@ p{
     padding: 20px;
     margin-left: 15px;
 }
-a{
+
+a {
     text-decoration: none;
 }

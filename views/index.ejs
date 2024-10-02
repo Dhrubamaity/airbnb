@@ -9,7 +9,13 @@
 </head>
 
 <body>
-    <h2>All listings</h2>
+    <div class="header">
+        <h2>All listings</h2>
+        <form action="/listing/new" method="GET">
+            <button>Add New</button>
+        </form>
+    </div>
+
     <div class="div">
         <% for(let listing of alllistings){ %>
             <a href="/listing/<%=listing._id%>">
@@ -18,7 +24,7 @@
                         <%=listing.title%>
                     </h3>
                     <div class="img">
-                        <img style="width: 490px; height:390px;border-radius: 30px;padding:15px;"
+                        <img style="width: 500px; height:390px;border-radius: 30px;padding:15px;"
                             src="<%=listing.image.url%>" alt="">
                     </div>
                     <p>

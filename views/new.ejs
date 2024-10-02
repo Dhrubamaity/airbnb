@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        form{
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 200px;
+            padding: 20px;
+        }
+        input{
+            height: 35px;
+            width: 20vw;
+            margin: 10px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        button{
+            background-color: black;
+            border: 2px solid white;
+            color: white;
+            padding: 10px;
+            border-radius: 30px;
+            width: 200px;
+            margin: 30px auto 0px auto;
+        }
+        button:hover {
+            background-color: rgb(22, 22, 22);
+        }
+    </style>
+</head>
+<body>
+    <form style="background-color: rgb(14, 14, 14); width:44vw; " method="POST" action="/listing/new">
+        <input name="listing[title]" type="text" placeholder="Enter title">
+        <textarea style="margin: 10px; width:42.2vw; height:60px" name="listing[description]" placeholder="Enter description"></textarea>
+        <input name="listing[image.url]" type="text" placeholder="Enter image url">
+        <input name="listing[price]" type="number" placeholder="Enter price">
+        <input name="listing[location]" type="text" placeholder="Enter location">
+        <input name="listing[country]" type="text" placeholder="Enter country name">
+        <button>Add</button>
+    </form>
+</body>
+</html>
