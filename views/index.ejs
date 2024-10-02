@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wonderlust</title>
+    <link rel="stylesheet" href=".\style.css">
+</head>
+
+<body>
+    <h2>All listings</h2>
+    <div class="div">
+        <% for(let listing of alllistings){ %>
+            <a href="/listing/<%=listing._id%>">
+                <div class="container">
+                    <h3>
+                        <%=listing.title%>
+                    </h3>
+                    <div class="img">
+                        <img style="width: 490px; height:390px;border-radius: 30px;padding:15px;"
+                            src="<%=listing.image.url%>" alt="">
+                    </div>
+                    <p>
+                        <%=listing.description%>
+                    </p>
+                </div>
+            </a>
+            <%}%>
+    </div>
+</body>
+
+</html>
