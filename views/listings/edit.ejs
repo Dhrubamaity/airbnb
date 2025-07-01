@@ -1,0 +1,53 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+    <body>
+        <form class="edit-container needs-validation" action="/listing/<%= newlisting._id%>?_method=PUT" method="POST" novalidate>
+            <h3>Update details</h3>
+            <div>
+                <label for="title" class="form-label">Title</label>
+                <input name="newlisting[title]" value="<%=newlisting.title%>" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Please give a proper title
+                  </div>
+            </div>
+            <div>
+                <label for="title" class="form-label">Description</label>
+                <textarea name="newlisting[description]" placeholder="<%=newlisting.description%>" type="text"
+                    class="form-control" required></textarea>
+                    <div class="invalid-feedback">
+                        Please give a proper description
+                      </div>
+            </div>
+            <div>
+                <label for="title" class="form-label">Imalge link</label>
+                <input name="newlisting[image]" value="<%=newlisting.image%>" type="text" class="form-control">
+                <div class="invalid-feedback">
+                    Please give a proper iumage url
+                  </div>
+            </div>
+            <div class="price-country">
+                <div class="edit-price">
+                    <label for="title" class="form-label">Price</label>
+                    <input name="newlisting[price]" value="<%=newlisting.price%>" type="number" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Please give a proper price
+                      </div>
+                </div>
+                <div class="edit-price">
+                    <label for="title" class="form-label">Country</label>
+                    <input name="newlisting[country]" value="<%=newlisting.country%>" type="text" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Please give a proper country
+                      </div>
+                </div>
+            </div>
+            <div>
+                <label for="title" class="form-label">Location</label>
+                <input name="newlisting[location]" value="<%=newlisting.location%>" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Please give a proper location
+                  </div>
+            </div>
+            <button class="edit-btn">Update</button>
+        </form>
+    </body>
