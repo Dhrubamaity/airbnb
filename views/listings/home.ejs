@@ -1,11 +1,157 @@
 <% layout("/layouts/boilerplate.ejs") %>
-<body>
-     <section class="hero-section">
-        <img src="https://images.wallpaperscraft.com/image/single/hotel_room_bed_70053_1600x900.jpg" alt="Stunning luxury villa with outdoor pool and palm trees in a tropical destination" class="hero-image">
-        <div class="hero-content">
-            <h1>Find your perfect getaway</h1>
-            <p>Discover unique places to stay, experiences, and more — all chosen by Wanderlust.</p>
-            <a href="/listing"><button class="hero-btn">Explore hotels</button></a>
-        </div>
-    </section>
-</body>
+
+    <body>
+        <section class="hero-section">
+            <img src="https://images.wallpaperscraft.com/image/single/hotel_room_bed_70053_1600x900.jpg"
+                alt="Stunning luxury villa with outdoor pool and palm trees in a tropical destination"
+                class="hero-image">
+            <div class="hero-content">
+                <h1>Find your perfect getaway</h1>
+                <p>Discover unique places to stay, experiences, and more — all chosen by Wanderlust.</p>
+                <a href="/listing"><button class="hero-btn button">Explore hotels</button></a>
+            </div>
+        </section>
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Featured Destinations</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="relative rounded-xl overflow-hidden h-64">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3fb8e255-9f24-475b-8f3b-43dc159e72ea.png"
+                            alt="Paris cityscape with Eiffel Tower at night, romantic city lights"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                            <div>
+                                <h3 class="text-xl font-semibold text-white">Paris</h3>
+                                <p class="text-gray-300">120+ hotels</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative rounded-xl overflow-hidden h-64">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e84e4cea-ebd2-4daa-9af9-04034e7a4084.png"
+                            alt="Tokyo city skyline with neon lights and modern skyscrapers"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                            <div>
+                                <h3 class="text-xl font-semibold text-white">Tokyo</h3>
+                                <p class="text-gray-300">85+ hotels</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative rounded-xl overflow-hidden h-64">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1bd37330-f93e-468b-8b02-40818d5bab9c.png"
+                            alt="Maldives beach resort with overwater bungalows and turquoise ocean"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                            <div>
+                                <h3 class="text-xl font-semibold text-white">Maldives</h3>
+                                <p class="text-gray-300">45+ resorts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative rounded-xl overflow-hidden h-64">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0f0473b6-6b76-4b69-8dd4-79802b8e5503.png"
+                            alt="New York City skyline with Statue of Liberty and skyscrapers"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                            <div>
+                                <h3 class="text-xl font-semibold text-white">New York</h3>
+                                <p class="text-gray-300">200+ hotels</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>  popular hotels >>>>>>>>>>>>>>>>> -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Popular Hotels</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="hotel-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                        <div class="relative">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e8274f2c-e8a0-4677-a685-94c393a8695a.png"
+                                alt="Luxury hotel suite with king bed, marble bathroom, and city view"
+                                class="w-full h-64 object-cover">
+                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full">
+                                <i class="fas fa-star mr-1"></i> 4.9
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold">The Grand Plaza</h3>
+                                <p class="text-blue-600 font-semibold">$239/<span
+                                        class="text-gray-500 text-sm">night</span></p>
+                            </div>
+                            <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                                Central Paris,
+                                France</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Free WiFi</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Pool</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Spa</span>
+                            </div>
+                            <button
+                                class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">Book
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="hotel-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                        <div class="relative">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e8274f2c-e8a0-4677-a685-94c393a8695a.png"
+                                alt="Luxury hotel suite with king bed, marble bathroom, and city view"
+                                class="w-full h-64 object-cover">
+                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full">
+                                <i class="fas fa-star mr-1"></i> 4.9
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold">The Grand Plaza</h3>
+                                <p class="text-blue-600 font-semibold">$239/<span
+                                        class="text-gray-500 text-sm">night</span></p>
+                            </div>
+                            <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                                Central Paris, France</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Free WiFi</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Pool</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Spa</span>
+                            </div>
+                            <button
+                                class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">Book
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="hotel-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                        <div class="relative">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e8274f2c-e8a0-4677-a685-94c393a8695a.png"
+                                alt="Luxury hotel suite with king bed, marble bathroom, and city view"
+                                class="w-full h-64 object-cover">
+                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full">
+                                <i class="fas fa-star mr-1"></i> 4.9
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold">The Grand Plaza</h3>
+                                <p class="text-blue-600 font-semibold">$239/<span
+                                        class="text-gray-500 text-sm">night</span></p>
+                            </div>
+                            <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                                Central Paris,
+                                France</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Free WiFi</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Pool</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Spa</span>
+                            </div>
+                            <button
+                                class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>

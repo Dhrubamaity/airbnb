@@ -34,7 +34,6 @@ app.use("/listing", reviewroutes);
 
 app.get("/home", (req, res) => {
     {
-        console.log("hello i am listening");
         res.render("listings/home.ejs");
     }
 });

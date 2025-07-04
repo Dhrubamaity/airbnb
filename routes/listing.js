@@ -31,13 +31,11 @@ app.use(express.urlencoded({ extended: true }));
 //index route
 router.get("/", wrapAsync(async (req, res) => {
     const alllistings = await listing.find({});
-    console.log("index")
     res.render("listings/index.ejs", { alllistings });
 }));
 
 //new route
 router.get("/new", (req, res) => {
-    console.log("new");
     res.render("listings/new.ejs");
 });
 

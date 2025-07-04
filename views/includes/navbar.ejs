@@ -1,21 +1,22 @@
-<nav class="navbar navbar-expand-md bg-body-tertiary border-bottom sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/"><i class="fa-brands fa-xing"></i></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/listing">All listings</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/listing/new">Create new</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<nav class="shadow-md sticky py-1 top-0 z-50 home_nav">
+        <div class="container mx-auto px-8 py-2">
+            <div class="flex justify-between items-center ">
+                <a class="flex items-center brand_logo" href="/home">
+                    <span>WANDERLUST</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/home" class="text-white-800 hover:text-blue-600 font-medium">Home</a>
+                    <a href="/listing" class="text-white-800 hover:text-blue-600 font-medium">Listing</a>
+                    <a href="/listing/new" class="text-white-800 hover:text-blue-600 font-medium">Create New</a>
+                    <a href="#" class="text-white-800 hover:text-blue-600 font-medium">Deals</a>
+                    <a href="#" class="tex-800 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="hidden md:block text-white rounded-md hover:bg-blue-700 transition button">Sign In</button>
+                    <button class="md:hidden text-gray-800">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
