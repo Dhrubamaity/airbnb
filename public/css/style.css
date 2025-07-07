@@ -7,6 +7,7 @@ body {
     background-color: antiquewhite;
     width: 100vw;
     height: 100vh;
+    overflow-X: hidden;
 }
 .button {
     color: rgb(237, 237, 237);
@@ -21,13 +22,13 @@ body {
 }
 
 .brand_logo span {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: sans-serif;
     font-weight: bold;
 }
 .home_nav{
-    background-color: #2e241fb6!important;
-    color: white!important;
+    background-color: #b1daf9b6!important;
+    color: rgb(0, 0, 0)!important;
     backdrop-filter: blur(10px);
 }
 footer {
@@ -45,33 +46,31 @@ footer {
 
 /* //index  */
 .index-container {
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .index-card {
-    width: 20vw;
+    padding: 10px 10px;
+    width: 270px;
     margin: 10px;
     border: none !important;
+    border-radius: 20px!important;
+    transition: ease 0.3s;
 }
-
 .index-card:hover {
-    opacity: 0.8;
+    box-shadow: 2px 2px 10px -2px rgb(83, 83, 83);
 }
-
 .index-card-img {
     background-size: cover;
     object-fit: cover;
     height: 230px;
-    border-radius: 10px;
 }
-
 .listing-link {
     text-decoration: none !important;
     color: black;
 }
-
 /* new// */
 .new-container {
     height: 100vh;
@@ -81,12 +80,10 @@ footer {
     line-height: 10px !important;
     margin-top: 30px;
 }
-
 .form-label {
     margin-top: 10px !important;
     font-weight: 500;
 }
-
 .form-control {
     opacity: 0.8 !important;
     font-size: 14px !important;
