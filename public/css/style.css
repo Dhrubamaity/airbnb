@@ -8,6 +8,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-X: hidden;
+    font-family: sans-serif!important;
 }
 .button {
     color: rgb(237, 237, 237);
@@ -140,75 +141,3 @@ footer {
     width: 24.5vw !important;
 }
 
-/* //show  */
-.show-container {
-    width: 50vw;
-    margin: auto;
-    padding: 10px;
-    list-style-type: none;
-}
-
-.show-container li {
-    margin-left: 13px;
-}
-
-.show-btns {
-    width: 37%;
-    display: flex;
-    padding-left: 10px;
-    justify-content: space-between;
-}
-
-.show-btn {
-    width: 100px;
-    height: 35px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(33, 32, 32);
-    color: white;
-    font-size: 14px;
-}
-
-.delete-btn {
-    background-color: rgb(255, 255, 255) !important;
-    border: 1px solid rgb(25, 24, 24) !important;
-    color: red !important;
-    font-weight: 600 !important;
-}
-
-.card-img-top {
-    border-radius: 10px;
-}
-
-.show-card {
-    width: 100% !important;
-    border: none !important;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.show-card-img {
-    width: 100% !important;
-    height: 240px;
-    object-fit: cover;
-    background-size: cover;
-}
-
-.review-form {
-    margin: 10px;
-    padding: 7px;
-    border-radius: 11px;
-}
-
-.review-card {
-    margin: 7px;
-    border: none !important;
-}
-
-.reviewlist {
-    margin: auto !important;
-}

@@ -1,0 +1,90 @@
+.show-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+    list-style-type: none;
+
+}
+
+.show-card {
+    font-size: 18px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px !important;
+}
+
+.show-card h4 {
+    padding: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.show-card-img {
+    width: 100% !important;
+    height: 240px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.show-btns {
+    width: 37%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.show-btn {
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(33, 32, 32);
+    color: white;
+    font-size: 14px;
+}
+
+.delete-btn {
+    background-color: rgb(255, 255, 255) !important;
+    border: 1px solid rgb(25, 24, 24) !important;
+    color: red !important;
+    font-weight: 600 !important;
+    margin-left: 10px;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+}
+
+.review-form {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 11px;
+}
+.reviewlist {
+    display: flex;
+    margin: auto !important;
+    gap: 5px 0px;
+}
+.review-card {
+    max-width: 40%;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+
+

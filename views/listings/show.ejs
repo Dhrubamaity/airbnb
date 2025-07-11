@@ -2,65 +2,85 @@
 
     <body>
         <div class="show-container">
-            <div class="card show-card" style="width: 24rem;">
+            <div class="card show-card">
                 <img src=" <%=Listing.image%>" class="card-img-top show-card-img" alt="...">
                 <div class="card-body">
-                    <h4 class="card-text">
+                    <h4>
                         <%=Listing.title%>
                     </h4>
+                    <li>
+                        <%=Listing.description%>
+                    </li>
+                    <li style="color: rgb(240, 79, 10); font-weight: 600;">&#8377;
+                        <%=Listing.price.toLocaleString("en-IN")%>
+                    </li>
+                    <li>
+                        <%=Listing.location%>
+                    </li>
+                    <li>
+                        <%=Listing.country%>
+                    </li>
+                    <div class="show-btns">
+                        <form method="GET" action="/listing/<%=Listing.id%>/edit">
+                            <button class="show-btn">Edit</button>
+                        </form>
+                        <form method="POST" action="/listing/<%=Listing.id%>?_method=delete">
+                            <button class="show-btn delete-btn">Delete</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <li>
-                <%=Listing.description%>
-            </li>
-            <li style="color: rgb(240, 79, 10); font-weight: 600;">&#8377; <%=Listing.price.toLocaleString("en-IN")%></li>
-            <li>
-                <%=Listing.location%>
-            </li>
-            <li>
-                <%=Listing.country%>
-            </li>
-            <div class="show-btns">
-                <form method="GET" action="/listing/<%=Listing.id%>/edit">
-                    <button class="show-btn">Edit</button>
-                </form>
-                <form method="POST" action="/listing/<%=Listing.id%>?_method=delete">
-                    <button class="show-btn delete-btn">Delete</button>
-                </form>
-            </div>
+            <br>
             <hr>
             <br>
-            <h4>Leave a review</h4>
-            <div class="review-form">     
-                <form action="/listing/<%=Listing.id%>/reviews" method="post" novalidate class="needs-validation">
-                    <div class="review-rating">
-                        <label class="form-label" for="rating">Rating</label>
-                        <input class="form-range" type="range" min="1" max="5" name="review[rating]">
-                    </div>
-                    <div class="review-comment">
-                        <label class="form-label" for="comment">Comment</label>
-                        <textarea name="review[comment]" class="form-control" placeholder="your comment valuable for us" required></textarea>
-                        <div class="invalid-feedback">
-                            Please give a comment
-                          </div>
-                    </div>
-                    <button class="show-btn">Submit</button>
-                </form>
-            </div>
-            <br>
-            <div class="reviewlist row"> 
+            <h1 style="font-size: 20px; font-weight: 600;">Leave a review</h1>
+            <div class="review-container">
+                <div class="review-form">
+                    <form action="/listing/<%=Listing.id%>/reviews" method="post" novalidate class="needs-validation">
+                        <div class="review-rating">
+                            <label class="form-label" for="rating">Rating</label>
+                            <input class="form-range" type="range" min="1" max="5" name="review[rating]">
+                        </div>
+                        <div class="review-comment">
+                            <label class="form-label" for="comment">Comment</label>
+                            <textarea name="review[comment]" class="form-control"
+                                placeholder="your comment valuable for us" required></textarea>
+                            <div class="invalid-feedback">
+                                Please give a comment
+                            </div>
+                        </div>
+                        <button class="show-btn">Submit</button>
+                    </form>
+                </div>
+                <br>
+                <div class="reviewlist row ">
                     <% for(review of Listing.reviews){ %>
                         <div class="card col-6 review-card" style="width: 18rem;">
                             <div class="card-body">
-                              <h5 class="card-title">Joe Stephen</h5>
-                              <h6 class="card-subtitle mb-2 text-body-secondary"><%=review.rating%> Star</h6>
-                              <p class="card-text"><%=review.comment%></p>
-                              <form action="/listing/<%=Listing._id%>/review/<%=review._id%>?_method=DELETE" method="POST">
-                                <button class="show-btn">delete</button>
-                              </form>
+                                <div class="profile" style="display: flex;text-align: center; align-items: center;">
+                                    <img style="width: 30px;height: 30px; border-radius: 50%; background-color: grey;" src="" alt="">
+                                <h5 class="card-title font-semibold" style="padding: 0px 7px;">Joe Stephen</h5>
+                                </div>
+                                <h6 class="card-subtitle m-2 text-blue-800">
+                                    <%=review.rating%> Star
+                                </h6>
+                                <p class="card-text" style="padding-left: 10px;">
+                                    <%=review.comment%>
+                                </p>
+                                <form action="/listing/<%=Listing._id%>/review/<%=review._id%>?_method=DELETE"
+                                    method="POST">
+                                    <button style="position: absolute; top: 15px; right: 8px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="20" height="20" viewBox="0 0 30 30">
+                                            <path
+                                                d="M 14.984375 2.4863281 A 1.0001 1.0001 0 0 0 14 3.5 L 14 4 L 8.5 4 A 1.0001 1.0001 0 0 0 7.4863281 5 L 6 5 A 1.0001 1.0001 0 1 0 6 7 L 24 7 A 1.0001 1.0001 0 1 0 24 5 L 22.513672 5 A 1.0001 1.0001 0 0 0 21.5 4 L 16 4 L 16 3.5 A 1.0001 1.0001 0 0 0 14.984375 2.4863281 z M 6 9 L 7.7929688 24.234375 C 7.9109687 25.241375 8.7633438 26 9.7773438 26 L 20.222656 26 C 21.236656 26 22.088031 25.241375 22.207031 24.234375 L 24 9 L 6 9 z">
+                                            </path>
+                                        </svg></button>
+                                </form>
                             </div>
-                          </div>
-                    <%}%>
+                        </div>
+                        <%}%>
+                </div>
             </div>
         </div>
 
