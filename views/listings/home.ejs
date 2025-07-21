@@ -1,106 +1,15 @@
 <% layout("/layouts/boilerplate.ejs") %>
 
     <body>
-        <section class="hero-section">
-            <img src="https://images.pexels.com/photos/27307399/pexels-photo-27307399.jpeg"
-                alt=""
-                class="hero-image">
+        <section class="hero">
+            <img  class="hero-image" src="https://www.pngmart.com/files/17/The-Seven-Wonders-of-World-PNG-HD.png" alt="">
             <div class="hero-content">
-                <h1>Find your perfect getaway</h1>
+                <h1>Find your perfect <span>getaway</span></h1>
                 <p>Discover unique places to stay, experiences, and more — all chosen by Wanderlust.</p>
-                <a href="/listing"><button class="hero-btn button">Explore hotels</button></a>
+                <a href="/listing"><button class="hero-btn button">Explore All ></button></a>
             </div>
         </section>
         <!-- >>>>>>>>>>>>>>>>>>>>>>>>  popular hotels >>>>>>>>>>>>>>>>> -->
-        <section class="py-16 bg-gray-50">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-12">Popular Hotels</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="hotel-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
-                        <div class="relative">
-                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e8274f2c-e8a0-4677-a685-94c393a8695a.png"
-                                alt="Luxury hotel suite with king bed, marble bathroom, and city view"
-                                class="w-full h-64 object-cover">
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full">
-                                <i class="fas fa-star mr-1"></i> 4.9
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <div class="flex justify-between items-start mb-2">
-                                <h3 class="text-xl font-bold">The Grand Plaza</h3>
-                                <p class="text-blue-600 font-semibold">$239/<span
-                                        class="text-gray-500 text-sm">night</span></p>
-                            </div>
-                            <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
-                                Central Paris,
-                                France</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Free WiFi</span>
-                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Pool</span>
-                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Spa</span>
-                            </div>
-                            <button
-                                class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">Book
-                                Now</button>
-                        </div>
-                    </div>
-                    <div class="hotel-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
-                        <div class="relative">
-                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e8274f2c-e8a0-4677-a685-94c393a8695a.png"
-                                alt="Luxury hotel suite with king bed, marble bathroom, and city view"
-                                class="w-full h-64 object-cover">
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full">
-                                <i class="fas fa-star mr-1"></i> 4.9
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <div class="flex justify-between items-start mb-2">
-                                <h3 class="text-xl font-bold">The Grand Plaza</h3>
-                                <p class="text-blue-600 font-semibold">$239/<span
-                                        class="text-gray-500 text-sm">night</span></p>
-                            </div>
-                            <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
-                                Central Paris, France</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Free WiFi</span>
-                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Pool</span>
-                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Spa</span>
-                            </div>
-                            <button
-                                class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">Book
-                                Now</button>
-                        </div>
-                    </div>
-                    <div class="hotel-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
-                        <div class="relative">
-                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e8274f2c-e8a0-4677-a685-94c393a8695a.png"
-                                alt="Luxury hotel suite with king bed, marble bathroom, and city view"
-                                class="w-full h-64 object-cover">
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full">
-                                <i class="fas fa-star mr-1"></i> 4.9
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <div class="flex justify-between items-start mb-2">
-                                <h3 class="text-xl font-bold">The Grand Plaza</h3>
-                                <p class="text-blue-600 font-semibold">$239/<span
-                                        class="text-gray-500 text-sm">night</span></p>
-                            </div>
-                            <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
-                                Central Paris,
-                                France</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Free WiFi</span>
-                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Pool</span>
-                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Spa</span>
-                            </div>
-                            <button
-                                class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">Book
-                                Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
 
     </body>
