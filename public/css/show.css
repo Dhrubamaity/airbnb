@@ -3,12 +3,11 @@
     margin: auto;
     padding: 10px;
     list-style-type: none;
-
 }
 
 .show-card {
     font-size: 18px;
-    border: 1px solid black;
+    border: none!important;
     padding: 20px;
     border-radius: 20px !important;
 }

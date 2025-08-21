@@ -69,10 +69,11 @@ footer {
     border: none !important;
     border-radius: 10px!important;
     transition: transform 0.3s linear;
+    
 }
 .index-card:hover {
-    box-shadow: 2px 2px 10px -2px rgb(83, 83, 83);
-    transform:translateY(-3px) ;
+    transform:translateY(-5px);
+    box-shadow: 0px 0px 1px black;
 }
 .index-card-img {
     background-size: cover;
