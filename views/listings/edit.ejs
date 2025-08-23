@@ -2,7 +2,7 @@
 
     <body>
         <form class="edit-container needs-validation" action="/listing/<%= newlisting._id%>?_method=PUT" method="POST" novalidate>
-            <h3>Update details</h3>
+            <h3 class="text-black-600 text-xl">Update details</h3>
             <div>
                 <label for="title" class="form-label">Title</label>
                 <input name="newlisting[title]" value="<%=newlisting.title%>" type="text" class="form-control" required>
@@ -26,14 +26,14 @@
                   </div>
             </div>
             <div class="price-country">
-                <div class="edit-price">
+                <div class="pc-subdiv">
                     <label for="title" class="form-label">Price</label>
                     <input name="newlisting[price]" value="<%=newlisting.price%>" type="number" class="form-control" required>
                     <div class="invalid-feedback">
                         Please give a proper price
                       </div>
                 </div>
-                <div class="edit-price">
+                <div class="pc-subdiv">
                     <label for="title" class="form-label">Country</label>
                     <input name="newlisting[country]" value="<%=newlisting.country%>" type="text" class="form-control" required>
                     <div class="invalid-feedback">

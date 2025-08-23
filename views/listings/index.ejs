@@ -2,13 +2,11 @@
 
     <body>
         <section class="hero">
-            <!-- <div class="hero-img"> -->
-            <!-- <img src="/asset/taj.jpg" alt="......."> -->
-            <!-- </div> -->
+            <img class="hero-image" src="https://images.unsplash.com/photo-1637823370891-7dc8a00f64f9?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=".......">
             <div class="hero-content">
                 <h1>Find your Perfect <span>getaway</span></h1>
                 <p>Discover unique places to stay, experiences, and more — all chosen by Wanderlust.</p>
-                <!-- <a href="/listing"><button class="hero-btn button">Explore All ></button></a> -->
+                <a href="/listing"><button class="hero-btn button hover:bg-purple-700">Scroll down & Explore </button></a>
             </div>
         </section>
         <div class="index-container">
@@ -17,13 +15,13 @@
                     <div class="card index-card">
                         <img src="<%= listing.image%>" class="card-img-top index-card-img" alt="<%=listing.title%>">
                         <div class="card-body">
-                            <h6 class="">
+                            <h6 >
                                 <%= listing.title %>
                             </h6>
-                            <h6 class="card-title">
+                            <h6 class="index-location">
                                 <%= listing.country %>, <%= listing.location %>
                             </h6>
-                                <p class="card-text text-purple-700 bg-purple-200 font-xs px-2 w-fit">
+                                <p class="card-text text-purple-700 font-sm w-fit">
                                 &#8377; <%= listing.price%>
                             </p>
                         </div>

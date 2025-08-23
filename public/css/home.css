@@ -3,17 +3,21 @@
     margin-top: 70px;
     border-radius: 20px;
     overflow: hidden;
-    position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
     height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-image {
-    width: 80%;
+    width: 100%;
     height: 100%;
     margin: auto;
     object-fit: cover;
     opacity: 0.3;
+    background-image: linear-gradient(black,rgba(255, 255, 255, 0));
 }
 
 @keyframes translate {
@@ -36,31 +40,27 @@
 .hero-content {
     border-inline: 1px solid rgb(197, 197, 197);
     position: absolute;
-    top: 25px;
-    left: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
-    max-width: 50%;
+    max-width: 80%;
     max-height: 100%;
-    border-radius: 1rem;
     padding: 20px;
     background-color: rgba(240, 240, 240, 0);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(1px);
     text-wrap: balance;
 }
-
 .hero-content h1 {
     font-family: sans-serif;
-    font-size: 4rem;
+    font-size: 7vw;
     font-weight: 600;
     text-align: center;
-    line-height: 3.9rem;
+    line-height: 6vw;
     margin-bottom: 15px;
-    color: rgb(0, 0, 0);
-    text-shadow: 0 2px 5px rgba(57, 57, 57, 0.5);
+    color: rgb(38, 38, 38);
+    /* text-shadow: 0 2px 5px rgba(57, 57, 57, 0.5); */
 }
 
 .hero-content span {
@@ -69,6 +69,7 @@
 }
 
 .hero-content p {
+    text-align: center;
     font-size: 12px;
     margin-bottom: 20px;
     margin-left: 3px;
@@ -77,17 +78,14 @@
 
 .hero-btn {
     color: rgb(252, 250, 253);
-    background-color: rgb(186, 42, 222);
-    border: 1px solid rgb(150, 0, 244);
+    background-color: rgb(5, 5, 5);
     padding: 7px 15px;
-    border-radius: 50px;
+    border-radius: 10px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
-    text-shadow: 0px 1px 2px black;
     transition: transform ease 0.3s;
 }
-
 .hero-btn:hover {
     text-shadow: 1px 1px 2px black;
     transform: translateY(-2px);
@@ -102,4 +100,14 @@
 .hotel-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width:470px){
+    .hero-content{
+        width: 100%;
+    }
+    .hero-content h1{
+        font-size: 15vw;
+        line-height: 13vw;
+    }
 }
