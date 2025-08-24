@@ -48,6 +48,15 @@ router.post("/new",
     res.redirect("/listing");
 }));
 
+router.get("/signup", (req, res) => {
+    res.render("listings/signup.ejs");
+});
+
+router.post("/signup",
+    wrapAsync(async (req, res, next) => {
+
+}));
+
 // edit route
 router.get("/:id/edit", wrapAsync(async (req, res) => {
     let { id } = req.params;
